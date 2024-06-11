@@ -1,4 +1,4 @@
-{% set version = "0.0.57" %}
+{% set version = "0.0.60" %}
 
 package:
   name: langchain-experimental
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/langchain-experimental/langchain_experimental-{{ version }}.tar.gz
-  sha256: d1fb452aa1f04f32f0e08b83b083f35552f4ece1077c5bdcf86327f56f1758b5
+  sha256: a16cbcd18cda6b86be8f41fed7963c13569295def0d8b4c6324b806d878d442c
 
 build:
   number: 0
@@ -15,13 +15,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.8,<4.0
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.8
-    - langchain >=0.1.15,<0.2.0
-    - langchain-core >=0.1.41,<0.2.0
+    - python >=3.8.1,<4.0
+    - langchain-core >=0.2.0,<0.3.0
+    - langchain-community >=0.2.0,<0.3.0
 
 test:
   requires:
@@ -40,3 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - raybellwaves
+    - jan-janssen
