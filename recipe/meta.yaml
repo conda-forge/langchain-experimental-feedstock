@@ -1,4 +1,4 @@
-{% set version = "0.0.62" %}
+{% set version = "0.0.63" %}
 
 package:
   name: langchain-experimental
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/langchain-experimental/langchain_experimental-{{ version }}.tar.gz
-  sha256: 9737fbc8429d24457ea4d368e3c9ba9ed1cace0564fb5f1a96a3027a588bd0ac
+  sha256: fc894599bfac43445004a9ff60d9a28751426b2fea1979e4b2fa453c847850c4
 
 build:
   number: 0
