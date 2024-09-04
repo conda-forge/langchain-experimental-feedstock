@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.8.1,<4.0
     - langchain-core >=0.2.7,<0.3.0
-    - langchain-community >=0.2.5,<0.3.0
+    - langchain-community <0.3.0,>=0.2.16
 
 test:
   requires:
