@@ -20,8 +20,8 @@ requirements:
     - pip
   run:
     - python >=3.8.1,<4.0
-    - langchain-core >=0.2.7,<0.3.0
-    - langchain-community <0.3.0,>=0.2.16
+    - langchain-core <0.4.0,>=0.3.0
+    - langchain-community <0.4.0,>=0.3.0
 
 test:
   requires:
