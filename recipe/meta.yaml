@@ -1,4 +1,4 @@
-{% set version = "0.3.4" %}
+{% set version = "0.4.0" %}
 
 package:
   name: langchain-experimental
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/langchain-experimental/langchain_experimental-{{ version }}.tar.gz
-  sha256: 937c4259ee4a639c618d19acf0e2c5c2898ef127050346edc5655259aa281a21
+  sha256: 16bb5c9810e1908c0e2d82cd000bb434bb437b8977507e4dbfe5f25800f431fd
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -20,8 +20,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }},<4.0
-    - langchain-core <0.4.0,>=0.3.0
-    - langchain-community <0.4.0,>=0.3.0
+    - langchain-core <2.0.0,>=1.0.0
+    - langchain-community <1.0.0,>=0.4.0
 
 test:
   requires:
